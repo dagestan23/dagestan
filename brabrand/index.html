@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brabbrand Biler - Quality Used Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Brabbrand Biler</h1>
+                    <p>Quality Used Cars</p>
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="auth-buttons">
+                    <button id="loginButton" class="nav-btn">Login</button>
+                    <button id="signupButton" class="nav-btn primary">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="filter-menu">
+        <select id="makeFilter">
+            <option value="">All Makes</option>
+        </select>
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+        </select>
+        <input type="number" id="minPrice" placeholder="Min Price">
+        <input type="number" id="maxPrice" placeholder="Max Price">
+    </div>
+    <main>
+        <div class="car-container" id="carContainer"></div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <h3>Brabbrand Biler</h3>
+                    <p>Your trusted partner in quality used cars since 2010.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Brabbrandvej 123, 8220 Brabbrand, Denmark</li>
+                    <li><i class="fas fa-phone"></i> +45 12 34 56 78</li>
+                    <li><i class="fas fa-envelope"></i> info@brabbrandbiler.dk</li>
+                </ul>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.2585029996785!2d10.202415316096785!3d56.15076828066215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sEdithsvej%201A%2C%208220%20Brabbrand%2C%20Denmark!5e0!3m2!1sen!2sdk!4v1622020000000!5m2!1sen!2sdk" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        width="300"
+                        height="200"
+                        style="pointer-events: none;">
+                    </iframe>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="payment-methods">
+                    <h5>We Accept:</h5>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                        <i class="fab fa-cc-amazon-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Use</a> | 
+                <a href="#">Cookie Policy</a>
+            </div>
+            <p>&copy; 2023 Brabbrand Biler. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="login-modal" id="loginModal">
+        <div class="login-content">
+            <span class="close-login">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="showRegister">Register</a></p>
+        </div>
+    </div>
+
+    <div class="register-modal" id="registerModal">
+        <div class="register-content">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm" class="register-form">
+                <input type="text" id="registerName" placeholder="Full Name" required>
+                <input type="email" id="registerEmail" placeholder="Email" required>
+                <input type="password" id="registerPassword" placeholder="Password" required>
+                <input type="text" id="registerCity" placeholder="City" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
